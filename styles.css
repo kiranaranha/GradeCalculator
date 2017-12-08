@@ -1,0 +1,50 @@
+body.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+body {
+    background-color: #c5deee;
+    vertical-align: top;
+
+}
+h1   {
+    color: #36428b;
+    text-align: center;
+    font-size: 50px;
+}
+
+#table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table td, #table th {
+    border: 1px solid #009cff;
+    padding: 8px;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+#table tr:nth-child(odd){background-color: #acc3f2;}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ffc5b7;
+    color: #fff5ff;
+}
+
+#weight1, #weight2, #weight3, #weight4, #grade1, #grade2, #grade3, #grade4, #finalWeight, #desiredGrade {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    background-color: #fff5ff;
+    color: #000000;
+    font-size: 15px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Grade Calculator</title>
+
+</head>
+<input>
+
+<h1>Grade Calculator</h1>
+
+<table id="table" border="”1”" cellspacing="”2”" cellpadding="”5”">
+    <tr>
+        <td></td>
+        <td>% Grade Weight (e.g 25)</td>
+        <td>% Grade (e.g 93)</td>
+    </tr><tr>
+    <td>homework</td>
+    <td><input id="weight1" value=""></td>
+    <td><input id="grade1" value="">
+    </td></tr>
+    <tr><td>quizzes</td>
+        <td><input id="weight2" value=""></td>
+        <td><input id="grade2" value=""></td>
+    </tr><tr>
+    <td>tests</td>
+    <td><input id="weight3" value=""></td>
+    <td><input id="grade3" value=""></td>
+</tr>
+    <tr><td>midterm</td>
+        <td><input id="weight4" value=""></td>
+        <td><input id="grade4" value=""></td>
+    </tr>
+</table>
+
+<button id="calcGrade" onclick="calcGrade()">Calculate Current Grade</button>
+
+<div id="currentGrade"></div>
+
+<input id="finalWeight" value="" placeholder="% Final Exam Weight...">
+<input id="desiredGrade" value="" placeholder="% Desired Grade...">
+
+<button id="calcFinal" onclick="calcFinal()">Calculate Final Grade</button>
+
+</body>
+</html>
