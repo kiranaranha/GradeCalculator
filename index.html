@@ -7,42 +7,50 @@
     <title>Grade Calculator</title>
 
 </head>
-<input>
+
 
 <h1>Grade Calculator</h1>
 
 <table id="table" border="”1”" cellspacing="”2”" cellpadding="”5”">
     <tr>
         <td></td>
-        <td>% Grade Weight (e.g 25)</td>
-        <td>% Grade (e.g 93)</td>
+        <td>% Grade Weight</td>
+        <td>% Grade </td>
     </tr><tr>
-    <td>homework</td>
-    <td><input id="weight1" value=""></td>
-    <td><input id="grade1" value="">
-    </td></tr>
-    <tr><td>quizzes</td>
-        <td><input id="weight2" value=""></td>
-        <td><input id="grade2" value=""></td>
+        <td>Homework</td>
+        <td><input id="weight1" value="10"></td>
+        <td><input id="grade1" value="100"></td>
     </tr><tr>
-    <td>tests</td>
-    <td><input id="weight3" value=""></td>
-    <td><input id="grade3" value=""></td>
-</tr>
-    <tr><td>midterm</td>
-        <td><input id="weight4" value=""></td>
-        <td><input id="grade4" value=""></td>
+        <td>Quizzes</td>
+        <td><input id="weight2" value="30"></td>
+        <td><input id="grade2" value="100"></td>
+    </tr><tr>
+        <td>Tests</td>
+        <td><input id="weight3" value="40"></td>
+        <td><input id="grade3" value="100"></td>
+    </tr><tr>
+        <td>Midterm</td>
+        <td><input id="weight4" value="20"></td>
+        <td><input id="grade4" value="100"></td>
+    </tr><tr>
+        <td><button id="calcGrade" onclick="calcGrade()">Calculate Current Grade</button></td>
+        <td><div id="currentGrade"></div></td>
     </tr>
 </table>
 
-<button id="calcGrade" onclick="calcGrade()">Calculate Current Grade</button>
+<br><br><br><br>
 
-<div id="currentGrade"></div>
-
-<input id="finalWeight" value="" placeholder="% Final Exam Weight...">
-<input id="desiredGrade" value="" placeholder="% Desired Grade...">
-
-<button id="calcFinal" onclick="calcFinal()">Calculate Final Grade</button>
+<table id="table1" border="”1”" cellspacing="”2”" cellpadding="”5”">
+    <tr>
+        <td>Final Exam % Weight</td><td><input id="finalWeight" value="15"></td>
+    </tr>
+    <tr>
+        <td>Desired % Grade</td><td><input id="desiredGrade" value="90"></td>
+    </tr>
+    <tr>
+        <td><button id="calcFinal" onclick="calcFinal()">Calculate Final Grade</button></td><td><div id="gradeNeeded"></div></td>
+    </tr>
+</table>
 
 </body>
 </html>
